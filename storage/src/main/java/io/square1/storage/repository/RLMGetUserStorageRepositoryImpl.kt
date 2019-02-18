@@ -1,12 +1,11 @@
 package io.square1.storage.repository
 
 import io.reactivex.Flowable
-import io.reactivex.Observable
 import io.realm.Realm
 import io.realm.RealmModel
 import io.realm.RealmResults
+import io.square1.storage.extensions.addRealmSchedulers
 import io.square1.storage.model.RLMUserModel
-import io.square1.storage.extensions.*
 
 
 class RLMGetUserStorageRepositoryImpl(private val realm: Realm) : RLMGetUsersStorageRepository {

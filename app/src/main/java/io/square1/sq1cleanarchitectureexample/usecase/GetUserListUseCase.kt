@@ -5,17 +5,15 @@ import io.reactivex.Flowable
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.schedulers.Schedulers
-import io.realm.RealmResults
 import io.square1.remote.model.NWUserModel
 import io.square1.remote.model.Results
 import io.square1.remote.repository.NWGetUsersRemoteRepository
 import io.square1.storage.model.Picture
 import io.square1.storage.model.RLMUserModel
 import io.square1.storage.repository.RLMGetUsersStorageRepository
-import javax.inject.Inject
 
 
-class GetUserListUseCase @Inject constructor(
+class GetUserListUseCase(
     private val nwGetUserRemoteRepository: NWGetUsersRemoteRepository,
     private val rlmGetUsersStorageRepository: RLMGetUsersStorageRepository
 ) {
